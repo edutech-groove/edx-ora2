@@ -6,7 +6,14 @@
             <h6 class="openassessment_container_header_title openassessment_criterion_header_title">{% trans "Criterion" %}</h6>
             <p class="openassessment_container_guide openassessment_criterion_guide">{% trans "You cannot delete a criterion after the assignment has been released." %}</p>
         </div>
-        <div class="openassessment_container_remove_button openassessment_criterion_remove_button"><h2>{% trans "Remove" %}</h2></div>
+        <div class="openassessment_container_remove_button openassessment_criterion_remove_button">
+            <div class="btn-content">
+                <svg width="13.6" height="15">
+                    <use xlink:href="#trash2"></use>
+                </svg>
+                {% trans "Remove" %}
+            </div>
+        </div>
     </div>
     <div class="openassessment_criterion_body wrapper-comp-settings">
         <input type="hidden" class="openassessment_criterion_name" value="{{ criterion_name }}" />
@@ -40,8 +47,15 @@
             {% endif %}
         </ul>
 
-        <div class="openassessment_criterion_add_option openassessment_option_header">
-            <h2>{% trans "Add Option" %}</h2>
+        <div class="add-button-wrapper">
+            <div class="openassessment_criterion_add_option openassessment_option_header">
+                <div class="btn-content">
+                    <svg width="12" height="12">
+                        <use xlink:href="#plus"></use>
+                    </svg>
+                    {% trans "Add Option" %}
+                </div>
+            </div>
         </div>
 
         <div class="openassessment_criterion_feedback_wrapper wrapper-comp-settings">

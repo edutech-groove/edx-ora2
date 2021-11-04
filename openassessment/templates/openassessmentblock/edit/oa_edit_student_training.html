@@ -22,8 +22,15 @@
                     {% include "openassessmentblock/edit/oa_training_example.html" with example=example %}
                 {% endfor %}
             </ol>
-            <div id="openassessment_add_training_example">
-                <h2 class='openassessment_add_training_example'>{% trans "Add Sample Response" %}</h2>
+            <div class="add-button-wrapper">
+                <div id="openassessment_add_training_example">
+                    <div class="btn-content">
+                        <svg width="12" height="12">
+                            <use xlink:href="#plus"></use>
+                        </svg>
+                        {% trans "Add Sample Response" %}
+                    </div>
+                </div>
             </div>
 
         </div>

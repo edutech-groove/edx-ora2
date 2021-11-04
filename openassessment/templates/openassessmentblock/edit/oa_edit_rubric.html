@@ -21,10 +21,15 @@
         {% endfor %}
     </ul>
 
-    <div id="openassessment_rubric_add_criterion" class="openassessment_container_add_button">
-        <h6>
-            {% trans "Add Criterion" %}
-        </h6>
+    <div class="add-button-wrapper">
+        <div id="openassessment_rubric_add_criterion" class="openassessment_container_add_button">
+            <div class="btn-content">
+                <svg width="12" height="12">
+                    <use xlink:href="#plus"></use>
+                </svg>
+                {% trans "Add Criterion" %}
+            </div>
+        </div>
     </div>
 
     <div id="openassessment_rubric_feedback_wrapper" class="wrapper-comp-settings">
