@@ -7,7 +7,14 @@
             <h6 class="openassessment_container_header_title openassessment_prompt_header_title">{% trans "Prompt" %}</h6>
             <p class="openassessment_container_guide openassessment_prompt_guide">{% trans "You cannot delete a prompt after the assignment has been released." %}</p>
         </div>
-        <div class="openassessment_container_remove_button openassessment_prompt_remove_button"><h2>{% trans "Remove" %}</h2></div>
+        <div class="openassessment_container_remove_button openassessment_prompt_remove_button">
+            <div class="btn-content">
+                <svg width="13.6" height="15">
+                    <use xlink:href="#trash2"></use>
+                </svg>
+                {% trans "Remove" %}
+            </div>
+        </div>
     </div>
 
     <div class="openassessment_prompt_body wrapper-comp-settings">
