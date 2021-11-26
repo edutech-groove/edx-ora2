@@ -66,6 +66,9 @@ OpenAssessment.ResponseView.prototype = {
                 view.baseView.announceStatusChangeToSRandFocus(stepID, usageID, false, view, focusID);
                 view.announceStatus = false;
                 view.dateFactory.apply();
+                if (window.CustomizeFunctionsHook && window.CustomizeFunctionsHook['inputFile'] && typeof CustomizeFunctionsHook['inputFile'] === 'function') {
+                    window.CustomizeFunctionsHook.inputFile();
+                }
             }
         ).fail(function() {
             view.baseView.showLoadError('response');
