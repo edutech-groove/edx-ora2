@@ -32,7 +32,7 @@ class SubmissionMixin(object):
 
     ALLOWED_FILE_MIME_TYPES = ['application/pdf'] + ALLOWED_IMAGE_MIME_TYPES
 
-    MAX_FILES_COUNT = 20
+    MAX_FILES_COUNT = 5
 
     # taken from http://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/
     # and http://pcsupport.about.com/od/tipstricks/a/execfileext.htm
